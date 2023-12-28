@@ -17,10 +17,8 @@ const Login = () => {
         setName('');
         setEmail('');
         setRole('');
-        navigate('/home')
+        navigate('/home');
     }
-
-    console.log(role);
 
     return (
         <div className='login'>

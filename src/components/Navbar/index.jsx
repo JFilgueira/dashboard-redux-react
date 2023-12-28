@@ -31,6 +31,10 @@ const Navbar = () => {
 
   isAble();
 
+  const informUser = () => {
+    window.alert('aaaaaaaaaaa')
+  }
+
   const handleLogout = () => {
     dispatch(login({name: '', email: '', role: ''}));
     navigate('/')
@@ -54,6 +58,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </nav>
+      <p className='inform-user'>If you can't acess a page, it's because you need a higher role!</p>
       <button className='logout-button' onClick={handleLogout}>Log out</button>
     </div>
   )

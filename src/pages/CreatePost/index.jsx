@@ -13,6 +13,8 @@ const CreatePost = () => {
 
   const user = useSelector((state) => state.user.value);
 
+  //when user is regular the redux is returning a empty object, so that why equal to empty
+  let isValid = user.role === '' ? false : true;
 
   const dispatch = useDispatch();
 
@@ -25,12 +27,14 @@ const CreatePost = () => {
 
     setTitle('');
     setContent('');
+
+    alert('Go to Home to see your new post!')
   }
 
   return (
     <div className='create-post'>
       <Navbar />
-      {user.role !== 'editor' && 'admin' ?
+      {!isValid ?
         <NoAcess /> :
         <div className='create-post-content'>
           <form onSubmit={handleNewPostSubmit} className='create-post-form'>

@@ -58,7 +58,12 @@ button:disabled:hover {
 .logout-button {
     position: absolute;
     bottom: 5%;
-    left: 40%;
+    left: 35%;
     padding: 5px;
     cursor: pointer;
+}
+
+.inform-user {
+    position: absolute;
+    bottom: 10%;
 }

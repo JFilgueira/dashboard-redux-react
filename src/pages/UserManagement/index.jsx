@@ -18,10 +18,9 @@ const UserManagement = () => {
 
 
   const deleteUser = (userToDelete) => {
-    console.log(listOfUsers);
     const filteredListOfUsers = listOfUsers.filter(user => user.id !== userToDelete.id);
     dispatch(editList(filteredListOfUsers));
-    console.log(userList);
+    alert('User deleted!');
   }
 
   return (
