@@ -1,0 +1,34 @@
+.no-acess {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-acess-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    gap: 10px;
+}
+
+.no-acess-content h1 {
+    font-size: 32px;
+}
+
+.no-acess-content p {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.no-acess-content button {
+    font-size: 25px;
+    padding: 5px 15px;
+    background-color: #0074AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+}
