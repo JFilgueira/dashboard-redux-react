@@ -37,3 +37,11 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .create-post-form {
+        width: 90%;
+        height: 50%;
+        justify-content: center;
+    }
+}

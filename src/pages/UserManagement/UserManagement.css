@@ -46,3 +46,30 @@
     color: white;
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .content-wrapper {
+        width: 100%;
+        margin: 0 10px;
+        margin-bottom: 0;
+    }
+
+    .user-list {
+        flex-direction: column;
+    }
+
+    .user-list-list {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+
+    .user-info {
+        border-right: none;
+    }
+
+    .user-list button {
+        margin-top: 5px;
+        padding: 3px 4px;
+        font-size: 16px;
+    }
+}

@@ -1,9 +1,22 @@
 .navbar {
-    width: 250px;
-    background-color: #22282C;
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+   background-color: #22282C; 
+}
+
+.hamburguer {
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.navbar-content {
     height: 100vh;
+    width: 250px;
     color: white;
     position: relative;
+    background-color: #22282C;
 }
 
 .navbar-title {
@@ -66,4 +79,23 @@ button:disabled:hover {
 .inform-user {
     position: absolute;
     bottom: 10%;
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        width: 50px;
+        display: flex;
+        height: 100vh;
+        padding-right: 5px;
+    }
+
+    .navbar-content {
+        display: none;
+        width: 100%;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 30px;
+    }
 }

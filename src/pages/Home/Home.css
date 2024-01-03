@@ -9,9 +9,25 @@
     align-items: center;
     overflow-y: auto;
     height: 100vh;
+    padding-bottom: 30px;
 }
 
 .post {
     width: 700px;
     margin-top: 30px;
+}
+
+@media (max-width: 450px) {
+    .home {
+        justify-content: space-between;
+    }
+
+    .home-content {
+        width: 100vh;
+    }
+
+    .post {
+        width: 100%;
+        padding: 0px 10px;
+    }
 }

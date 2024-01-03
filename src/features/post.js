@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialStateValue = { title: '', content: '', author: '' };
+const initialStateValue = { title: '', content: ''};
 
 export const postSlice = createSlice({
     name: "post",

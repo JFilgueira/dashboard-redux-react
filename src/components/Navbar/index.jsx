@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../features/user'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   const user = useSelector((state) => state.user.value);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -31,35 +33,35 @@ const Navbar = () => {
 
   isAble();
 
-  const informUser = () => {
-    window.alert('aaaaaaaaaaa')
-  }
-
   const handleLogout = () => {
-    dispatch(login({name: '', email: '', role: ''}));
+    dispatch(login({ name: '', email: '', role: '' }));
     navigate('/')
   }
 
-
   return (
-    <div className='navbar'>
-      <h1 className='navbar-title'>Dashboard</h1>
-      <p className='navbar-user'>welcome {user.name}</p>
-      <nav>
-        <ul className='navbar-nav'>
-          <Link to='/home' className='nav-link'>
-            <button disabled={accessHome}>Home</button>
-          </Link>
-          <Link to='/create-post' className='nav-link'>
-            <button disabled={accessCreatePost}>Create Post</button>
-          </Link>
-          <Link to='/user-management' className='nav-link'>
-            <button disabled={accessUserManagement}>User's Management</button>
-          </Link>
-        </ul>
-      </nav>
-      <p className='inform-user'>If you can't acess a page, it's because you need a higher role!</p>
-      <button className='logout-button' onClick={handleLogout}>Log out</button>
+    <div className='navbar' style={{width: toggle ? '80%' : '50px', position: toggle ? 'absolute' : 'inherit'}}>
+      <div className="hamburguer-container">
+          <GiHamburgerMenu className='hamburguer' onClick={() => setToggle(!toggle)}/>
+      </div>
+      <div className="navbar-content" style={{display: toggle ? 'block' : ''}}>
+        <h1 className='navbar-title'>Dashboard</h1>
+        <p className='navbar-user'>welcome {user.name}</p>
+        <nav>
+          <ul className='navbar-nav'>
+            <Link to='/home' className='nav-link'>
+              <button disabled={accessHome}>Home</button>
+            </Link>
+            <Link to='/create-post' className='nav-link'>
+              <button disabled={accessCreatePost}>Create Post</button>
+            </Link>
+            <Link to='/user-management' className='nav-link'>
+              <button disabled={accessUserManagement}>User's Management</button>
+            </Link>
+          </ul>
+        </nav>
+        <p className='inform-user'>If you can't acess a page, it's because you need a higher role!</p>
+        <button className='logout-button' onClick={handleLogout}>Log out</button>
+      </div>
     </div>
   )
 }

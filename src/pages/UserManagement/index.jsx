@@ -31,14 +31,16 @@ const UserManagement = () => {
         <div className='user-management-content'>
           <div className='content-wrapper'>
             <h1>Users List</h1>
-            {userList.map(user => (
-              <div key={user.id} className='user-list'>
-                <p className='user-info'>Email: <span>{user.email}</span></p>
-                <p className='user-info'>Name: <span>{user.name}</span></p>
-                <p className='user-info'>Role: <span>{user.role}</span></p>
-                <button onClick={() => deleteUser(user)}>X</button>
-              </div>
-            ))}
+            <div className="user-list">
+              {userList.map(user => (
+                <div key={user.id} className='user-list-list'>
+                  <p className='user-info'>Email: <span>{user.email}</span></p>
+                  <p className='user-info'>Name: <span>{user.name}</span></p>
+                  <p className='user-info'>Role: <span>{user.role}</span></p>
+                  <button onClick={() => deleteUser(user)}>X</button>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>
