@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Dashboard with User Role Management with Redux Toolkit and React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project's Scope
+Much more than implement something with Redux, I wanted in this project to simply learn the basics of Redux. The ideia came by friend, "don't use redux to create another Todo-list. Make something more real-world sceanario". So despite the simplicity of the app, you will be able to choose a user role and based on that you're going to have acess or not to some parts of the site. The greater the role, the grater the acess. And of that data management made by Redux Toolkit.
 
-## Available Scripts
+* Choose a user role and navigate through different parts of the site
+* Create new posts when having a Editor or higher acess
+* Delete users from a user list when Admin acess
+* Responsive design
+* Protected routes
+* [Live preview on Vercel](https://pokedex-react-flax.vercel.app/)
 
-In the project directory, you can run:
+![telegram](https://github.com/JFilgueira/telegramclone/assets/103948600/c65d7fcb-9229-48d6-9d19-96f16c76ba3f)
 
-### `npm start`
+## Getting started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Running 
+```
+npm install
+npm start
+```
+# Build with
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologies
+* ReactJs (ContextAPI, Hooks and Custom Hooks, React-router-dom)
+* Google Firebase
+* Styled Components
+* HTML5 & CSS3
+* Axios
 
-### `npm test`
+## Tools Used
+* Visual Studio Code
+* npm package manager
+* Git and Github
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Sources, Materials, Copyright
+* [PokéAPI](https://pokeapi.co/)
